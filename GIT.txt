@@ -1,0 +1,38 @@
+// COMANDOS CONSOLA
+clear		-> limpir consola
+cd	-> chnage directory
+ls	-> ver archivos
+ls	-a ->ver archivos ocultos
+pwd	-> ver donde te encuentras
+mkdir <nombre>	-> crear carpeta
+rm <nombre.extension>	-> eliminar archivo
+mv <NombreActual.extension> <NuevoNombre.extension>	-> reenombrar archivo
+cd /D/	-> cambiar de unidad
+code .	-> abrir en VScode
+
+// COMANDOS GIT
+git init	-> inicializar un repositorio de git
+git status	-> ver el estado de mi aplicacion
+git status -s	-> ver el estado de mi aplicacion mas simple
+
+git add -- AGREGA ARCHIVOS A ETAPA STAGE --
+	git add <nombreDelArchivo.Extension>	-> agrega un archivo especifico
+	git add *.Extension	-> agrega todos los archivos con esa extension
+	git add .	-> agrega absolutamente todos los archivos (MALA PRACTICA)
+
+git restore --staged <nombreDelArchivo.Extension>	-> sacar cambio del STAGED
+git restore <NombreDelArchivo.Extension>	-> deshacer cambios en un archivo
+git commit -m "descripcion del commit"	-> hacer commit a archivos que se encuentran en etapa STAGE
+git commit	-> hace un commit pero abre VScode para agregar descripcion
+git rm <NombreDelArchivo.Extension>	-> ejecuta rm <archivo> y git add <archivo>
+git mv <NombreArchivo.extension> <NuevoNombre.extension>	-> renombrar archivo y subir a staged
+git diff	-> ver cambios que NO estan en etapa staged
+git diff --staged		-> ver cambios en etapa staged
+git log	-> ver el historial
+git log --oneline		-> ver el historial (MEJOR)
+
+git branch	-> saber en que rama estamos
+git checkout -b <NombreDeLaNuevaRama>	-> crear nueva rama
+cat <NombreDelArchivo.extension>	-> mostrar contenido de archivo
+git checkout <NombreDeRama>	-> cambiat de rama
+git merge <NombreDeRamaAExtraerCambios>	-> Llevar cambios de una rama a otra (debemos estar en la rama donde queremos traer los cambios)
