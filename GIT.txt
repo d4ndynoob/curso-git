@@ -37,3 +37,4 @@ cat <NombreDelArchivo.extension>	-> mostrar contenido de archivo
 git checkout <NombreDeRama>	-> cambiat de rama
 git merge <NombreDeRamaAExtraerCambios>	-> Llevar cambios de una rama a otra (debemos estar en la rama donde queremos traer los cambios)
 git push	-> subir el commit a el servidor principal
+git push -u origin <NombreDeLaRamaCreada>	-> subir una rama a git
